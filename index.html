@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cantante para eventos, cumpleaños y fiestas. Música en vivo, energía y un show a medida para que tu celebración sea inolvidable.">
+  <meta name="theme-color" content="#0b0a10">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Omar el Cubano | Música en vivo para celebrar">
+  <meta property="og:description" content="Cantante para eventos, cumpleaños y fiestas. Descubre un show en vivo hecho a la medida de tu celebración.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1200&q=85">
+  <meta property="og:locale" content="es_ES">
+  <title>Omar el Cubano | Cantante para eventos, cumpleaños y fiestas</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b0a10'/%3E%3Cpath d='M32 10a10 10 0 0 0-10 10v13a10 10 0 0 0 20 0V20a10 10 0 0 0-10-10Zm16 22a2 2 0 0 0-4 0 12 12 0 0 1-24 0 2 2 0 0 0-4 0 16 16 0 0 0 14 15.87V54h-7a2 2 0 0 0 0 4h18a2 2 0 0 0 0-4h-7v-6.13A16 16 0 0 0 48 32Z' fill='%23e8bd70'/%3E%3C/svg%3E">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#0b0a10",
+            panel: "#14121b",
+            gold: "#e8bd70",
+            violet: "#a875ff"
+          },
+          fontFamily: {
+            display: ["Georgia", "serif"],
+            sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #0b0a10; }
+    .hero-glow { background: radial-gradient(ellipse at 70% 42%, rgba(143, 82, 229, .2), transparent 38%), radial-gradient(ellipse at 20% 85%, rgba(232, 189, 112, .09), transparent 34%); }
+    .text-gradient { background: linear-gradient(105deg, #fff 12%, #e8bd70 55%, #bd8cff 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .wa-pulse { animation: wa-pulse 2.2s infinite; }
+    @keyframes wa-pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, .45); } 60% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); } }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
+  </style>
+</head>
+<body class="font-sans text-white antialiased selection:bg-violet/40 selection:text-white">
+  <header class="fixed inset-x-0 top-0 z-40 border-b border-white/10 bg-ink/85 backdrop-blur-xl">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8" aria-label="Navegación principal">
+      <a href="#inicio" class="group inline-flex items-center gap-3" aria-label="Omar el Cubano, ir al inicio">
+        <span class="grid h-10 w-10 place-items-center rounded-full border border-gold/50 text-gold transition group-hover:bg-gold group-hover:text-ink"><i class="fa-solid fa-microphone-lines" aria-hidden="true"></i></span>
+        <span class="font-display text-xl tracking-wide">OMAR <span class="text-gold">EL CUBANO</span></span>
+      </a>
+      <button id="menu-toggle" class="grid h-11 w-11 place-items-center rounded-lg border border-white/15 text-white md:hidden" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+      <div id="nav-links" class="absolute left-0 right-0 top-full hidden flex-col gap-1 border-b border-white/10 bg-ink/95 px-5 py-4 md:static md:flex md:flex-row md:items-center md:gap-8 md:border-0 md:bg-transparent md:p-0">
+        <a class="nav-link rounded px-3 py-2 text-sm text-white/75 transition hover:text-gold md:px-0" href="#sobre-mi">Sobre mí</a>
+        <a class="nav-link rounded px-3 py-2 text-sm text-white/75 transition hover:text-gold md:px-0" href="#servicios">Servicios</a>
+        <a class="nav-link rounded px-3 py-2 text-sm text-white/75 transition hover:text-gold md:px-0" href="#galeria">Galería</a>
+        <a class="nav-link rounded px-3 py-2 text-sm text-white/75 transition hover:text-gold md:px-0" href="#opiniones">Opiniones</a>
+        <a class="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-gold px-5 py-3 text-sm font-semibold text-ink transition hover:bg-white md:mt-0" href="#contacto">Hablemos <i class="fa-solid fa-arrow-up-right-from-square text-xs" aria-hidden="true"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero-glow relative flex min-h-[760px] items-center overflow-hidden px-5 pb-20 pt-32 sm:px-8">
+      <div class="absolute inset-0 -z-10">
+        <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=2000&q=90" alt="" class="h-full w-full object-cover opacity-25" fetchpriority="high">
+        <div class="absolute inset-0 bg-gradient-to-r from-ink via-ink/90 to-ink/55"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/40"></div>
+      </div>
+      <div class="mx-auto grid w-full max-w-7xl items-center gap-12 lg:grid-cols-[1.1fr_.9fr]">
+        <div class="max-w-3xl">
+          <p class="mb-6 inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[.28em] text-gold"><span class="h-px w-8 bg-gold"></span> Música en vivo · Momentos inolvidables</p>
+          <h1 class="font-display text-5xl leading-[1.08] sm:text-6xl lg:text-7xl">Tu celebración merece <span class="text-gradient">un gran show.</span></h1>
+          <p class="mt-7 max-w-xl text-base leading-8 text-white/70 sm:text-lg">Una voz en vivo, canciones que todos conocen y la energía justa para convertir cualquier evento en una noche para recordar.</p>
+          <div class="mt-9 flex flex-col gap-4 sm:flex-row">
+            <a href="#contacto" class="inline-flex items-center justify-center gap-3 rounded-full bg-gold px-7 py-4 font-semibold text-ink shadow-lg shadow-gold/10 transition hover:-translate-y-0.5 hover:bg-white">Ver disponibilidad <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            <a href="#servicios" class="inline-flex items-center justify-center gap-3 rounded-full border border-white/25 px-7 py-4 font-medium text-white transition hover:border-violet hover:text-violet"><i class="fa-solid fa-circle-play" aria-hidden="true"></i> Descubrir el show</a>
+          </div>
+          <div class="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-white/15 pt-7 text-sm text-white/65">
+            <span class="inline-flex items-center gap-2"><i class="fa-solid fa-music text-gold" aria-hidden="true"></i> Repertorio versátil</span>
+            <span class="inline-flex items-center gap-2"><i class="fa-solid fa-star text-gold" aria-hidden="true"></i> Show personalizado</span>
+            <span class="inline-flex items-center gap-2"><i class="fa-solid fa-location-dot text-gold" aria-hidden="true"></i> Consultar por tu zona</span>
+          </div>
+        </div>
+        <div class="relative mx-auto hidden w-full max-w-md lg:block">
+          <div class="absolute -inset-4 rounded-[2rem] border border-gold/30 rotate-3"></div>
+          <img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=900&q=85" alt="Público disfrutando de un espectáculo musical en vivo" class="relative h-[490px] w-full rounded-[1.7rem] object-cover shadow-2xl shadow-black/50">
+          <div class="absolute -bottom-6 -left-8 rounded-2xl border border-white/10 bg-panel/95 px-5 py-4 shadow-xl backdrop-blur">
+            <p class="text-xs uppercase tracking-[.2em] text-white/50">Una noche, mil emociones</p>
+            <p class="mt-1 font-display text-xl text-gold">La música nos reúne</p>
+          </div>
+          <div class="absolute -right-5 top-8 grid h-16 w-16 place-items-center rounded-full bg-violet text-xl shadow-lg shadow-violet/30"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="px-5 py-24 sm:px-8 lg:py-32">
+      <div class="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2 lg:gap-20">
+        <div class="relative mx-auto w-full max-w-lg">
+          <div class="absolute -bottom-5 -left-5 h-40 w-40 rounded-3xl border border-violet/50"></div>
+          <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1000&q=85" alt="Cantante interpretando una canción sobre el escenario" class="relative h-[440px] w-full rounded-3xl object-cover">
+          <div class="absolute bottom-5 right-5 rounded-xl border border-white/10 bg-ink/85 px-4 py-3 backdrop-blur"><span class="text-xs uppercase tracking-widest text-white/55">En vivo, para ti</span><p class="mt-1 font-display text-lg text-gold">Omar el Cubano</p></div>
+        </div>
+        <div>
+          <p class="mb-4 text-xs font-semibold uppercase tracking-[.28em] text-violet">Detrás de cada canción</p>
+          <h2 class="font-display text-4xl leading-tight sm:text-5xl">Hola, soy <span class="text-gold">Omar.</span><br>Y amo hacerte cantar.</h2>
+          <p class="mt-7 leading-8 text-white/65">La música tiene ese poder único de reunir a todos. Por eso, en cada show mezclo voz en vivo, carisma y un repertorio que viaja por distintos estilos y generaciones. Me gusta leer el ambiente, conectar con las personas y hacer que cada celebración tenga su propio ritmo.</p>
+          <p class="mt-4 leading-8 text-white/65">Desde una fiesta íntima hasta una gran noche de empresa, trabajo contigo para que el espectáculo encaje con tu evento y tus invitados se lleven una historia que contar.</p>
+          <div class="mt-8 grid grid-cols-2 gap-5 border-t border-white/10 pt-7">
+            <div><p class="font-display text-2xl text-gold">A tu medida</p><p class="mt-1 text-sm text-white/55">Cada evento es diferente</p></div>
+            <div><p class="font-display text-2xl text-gold">100% en vivo</p><p class="mt-1 text-sm text-white/55">Energía que se siente</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="bg-panel/70 px-5 py-24 sm:px-8 lg:py-28">
+      <div class="mx-auto max-w-7xl">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="mb-4 text-xs font-semibold uppercase tracking-[.28em] text-gold">El show ideal para cada ocasión</p>
+          <h2 class="font-display text-4xl sm:text-5xl">¿Qué celebramos?</h2>
+          <p class="mt-5 leading-7 text-white/60">Un espectáculo flexible, pensado para acompañar el estilo de tu evento y levantar cada momento especial.</p>
+        </div>
+        <div class="mt-14 grid gap-6 md:grid-cols-3">
+          <article class="group rounded-2xl border border-white/10 bg-ink p-8 transition duration-300 hover:-translate-y-2 hover:border-gold/50">
+            <div class="grid h-14 w-14 place-items-center rounded-2xl bg-gold/10 text-2xl text-gold"><i class="fa-solid fa-cake-candles" aria-hidden="true"></i></div>
+            <h3 class="mt-7 font-display text-2xl">Cumpleaños &amp; fiestas</h3>
+            <p class="mt-4 min-h-24 leading-7 text-white/60">Éxitos para cantar a coro, variedad musical y animación para que nadie se quede sentado. Tú pones el motivo; yo, la banda sonora.</p>
+            <a href="#contacto" class="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-gold transition group-hover:gap-3">Cotizar mi fiesta <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i></a>
+          </article>
+          <article class="group rounded-2xl border border-white/10 bg-ink p-8 transition duration-300 hover:-translate-y-2 hover:border-violet/60">
+            <div class="grid h-14 w-14 place-items-center rounded-2xl bg-violet/10 text-2xl text-violet"><i class="fa-solid fa-champagne-glasses" aria-hidden="true"></i></div>
+            <h3 class="mt-7 font-display text-2xl">Eventos corporativos</h3>
+            <p class="mt-4 min-h-24 leading-7 text-white/60">Un show elegante, puntual y adaptable a tu marca. El toque musical perfecto para celebrar logros, conectar equipos y sorprender a tus invitados.</p>
+            <a href="#contacto" class="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-violet transition group-hover:gap-3">Cotizar mi evento <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i></a>
+          </article>
+          <article class="group rounded-2xl border border-white/10 bg-ink p-8 transition duration-300 hover:-translate-y-2 hover:border-gold/50">
+            <div class="grid h-14 w-14 place-items-center rounded-2xl bg-gold/10 text-2xl text-gold"><i class="fa-solid fa-heart" aria-hidden="true"></i></div>
+            <h3 class="mt-7 font-display text-2xl">Bodas &amp; aniversarios</h3>
+            <p class="mt-4 min-h-24 leading-7 text-white/60">Canciones que cuentan su historia, momentos íntimos y un repertorio para celebrar el amor con emoción, calidez y mucha alegría.</p>
+            <a href="#contacto" class="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-gold transition group-hover:gap-3">Cotizar mi celebración <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="px-5 py-24 sm:px-8 lg:py-28">
+      <div class="mx-auto max-w-7xl">
+        <div class="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+          <div><p class="mb-4 text-xs font-semibold uppercase tracking-[.28em] text-violet">Así se vive el show</p><h2 class="font-display text-4xl sm:text-5xl">Un poco de magia en vivo</h2></div>
+          <p class="max-w-md leading-7 text-white/60">Cada escenario es distinto. La emoción de compartir música, siempre la misma.</p>
+        </div>
+        <div class="mt-12 grid auto-rows-[220px] gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="group relative overflow-hidden rounded-2xl sm:row-span-2 sm:row-auto lg:row-span-2">
+            <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=900&q=85" alt="Concierto en vivo con luces sobre el escenario" loading="lazy" class="h-full w-full object-cover transition duration-700 group-hover:scale-105">
+            <span class="absolute bottom-4 left-4 rounded-full bg-ink/75 px-4 py-2 text-xs tracking-wide backdrop-blur">El escenario</span>
+          </div>
+          <div class="group relative overflow-hidden rounded-2xl">
+            <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=900&q=85" alt="Público disfrutando las luces de una fiesta" loading="lazy" class="h-full w-full object-cover transition duration-700 group-hover:scale-105">
+            <span class="absolute bottom-4 left-4 rounded-full bg-ink/75 px-4 py-2 text-xs tracking-wide backdrop-blur">La energía</span>
+          </div>
+          <div class="group relative overflow-hidden rounded-2xl">
+            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=85" alt="Salón preparado para una celebración especial" loading="lazy" class="h-full w-full object-cover transition duration-700 group-hover:scale-105">
+            <span class="absolute bottom-4 left-4 rounded-full bg-ink/75 px-4 py-2 text-xs tracking-wide backdrop-blur">Los momentos</span>
+          </div>
+          <a href="#contacto" class="group relative flex min-h-[220px] flex-col items-center justify-center overflow-hidden rounded-2xl border border-violet/30 bg-gradient-to-br from-violet/20 to-gold/10 p-6 text-center transition hover:border-violet/70 lg:col-span-2">
+            <span class="mb-4 grid h-14 w-14 place-items-center rounded-full border border-white/20 text-xl text-white transition group-hover:scale-110 group-hover:bg-violet"><i class="fa-solid fa-play" aria-hidden="true"></i></span>
+            <span class="font-display text-2xl">¿Listo para vivirlo?</span>
+            <span class="mt-2 text-sm text-white/60">Reserva tu fecha y hagamos un show a tu medida.</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="opiniones" class="bg-panel/70 px-5 py-24 sm:px-8 lg:py-28">
+      <div class="mx-auto max-w-7xl">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="mb-4 text-xs font-semibold uppercase tracking-[.28em] text-gold">Lo que importa es cómo se siente</p>
+          <h2 class="font-display text-4xl sm:text-5xl">Palabras que animan</h2>
+        </div>
+        <div class="mt-12 grid gap-6 md:grid-cols-2">
+          <figure class="rounded-2xl border border-white/10 bg-ink p-8 sm:p-10">
+            <div class="flex gap-1 text-sm text-gold" aria-label="5 de 5 estrellas"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></div>
+            <blockquote class="mt-6 font-display text-2xl leading-relaxed text-white/90">“¡Puso a bailar a todos en mis 50! Fue una noche llena de alegría y canciones que nos sabemos de memoria.”</blockquote>
+            <figcaption class="mt-7 border-t border-white/10 pt-5 text-sm text-white/55">Reseña de ejemplo <span class="px-2 text-gold">·</span> Cumpleaños</figcaption>
+          </figure>
+          <figure class="rounded-2xl border border-white/10 bg-ink p-8 sm:p-10">
+            <div class="flex gap-1 text-sm text-gold" aria-label="5 de 5 estrellas"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></div>
+            <blockquote class="mt-6 font-display text-2xl leading-relaxed text-white/90">“El show fue justo lo que soñábamos para nuestra celebración: cálido, elegante y con una energía increíble.”</blockquote>
+            <figcaption class="mt-7 border-t border-white/10 pt-5 text-sm text-white/55">Reseña de ejemplo <span class="px-2 text-violet">·</span> Celebración especial</figcaption>
+          </figure>
+        </div>
+        <p class="mt-5 text-center text-xs text-white/40">Textos de muestra: reemplázalos por reseñas autorizadas de tus clientes antes de publicar.</p>
+      </div>
+    </section>
+
+    <section id="contacto" class="px-5 py-24 sm:px-8 lg:py-28">
+      <div class="relative mx-auto max-w-5xl overflow-hidden rounded-3xl border border-gold/25 bg-gradient-to-br from-panel via-panel to-violet/20 px-6 py-14 text-center sm:px-12 sm:py-20">
+        <div class="absolute -right-16 -top-24 h-64 w-64 rounded-full bg-violet/20 blur-3xl"></div>
+        <div class="relative">
+          <p class="mb-4 text-xs font-semibold uppercase tracking-[.28em] text-gold">Tu fecha merece un gran show</p>
+          <h2 class="mx-auto max-w-3xl font-display text-4xl leading-tight sm:text-5xl">Hagamos que todos recuerden esta noche.</h2>
+          <p class="mx-auto mt-5 max-w-xl leading-7 text-white/65">Cuéntame qué estás organizando y preparo una propuesta para que la música sea parte de tus mejores recuerdos.</p>
+          <a data-whatsapp href="https://wa.me/525514668544?text=Hola%2C%20vi%20tu%20p%C3%A1gina%20web%20y%20me%20interesa%20cotizar%20un%20show%20para%20mi%20evento.%20%C2%BFTienes%20disponibilidad%3F" target="_blank" rel="noopener noreferrer" class="mt-8 inline-flex items-center justify-center gap-3 rounded-full bg-[#25D366] px-7 py-4 font-bold text-[#082b16] transition hover:-translate-y-0.5 hover:bg-white"><i class="fa-brands fa-whatsapp text-xl" aria-hidden="true"></i> Cotizar mi show por WhatsApp</a>
+          <p class="mt-4 text-xs text-white/45">El enlace abre WhatsApp con tu mensaje listo para enviar.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 px-5 py-7 sm:px-8">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 text-center sm:flex-row sm:text-left">
+      <a href="#inicio" class="font-display tracking-wide">OMAR <span class="text-gold">EL CUBANO</span></a>
+      <p class="text-xs text-white/45">Música en vivo para momentos que merecen ser inolvidables.</p>
+      <a href="#inicio" class="text-xs text-white/50 transition hover:text-gold">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <a data-whatsapp href="https://wa.me/525514668544?text=Hola%2C%20vi%20tu%20p%C3%A1gina%20web%20y%20me%20interesa%20cotizar%20un%20show%20para%20mi%20evento.%20%C2%BFTienes%20disponibilidad%3F" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp" class="wa-pulse fixed bottom-5 right-5 z-50 grid h-14 w-14 place-items-center rounded-full bg-[#25D366] text-3xl text-white shadow-lg shadow-black/40 transition hover:scale-110 sm:bottom-7 sm:right-7">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
+      menuToggle.setAttribute("aria-expanded", String(!isExpanded));
+      menuToggle.setAttribute("aria-label", isExpanded ? "Abrir menú" : "Cerrar menú");
+      navLinks.classList.toggle("hidden", isExpanded);
+      navLinks.classList.toggle("flex", !isExpanded);
+    });
+
+    navLinks.querySelectorAll(".nav-link").forEach((link) => {
+      link.addEventListener("click", () => {
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Abrir menú");
+        navLinks.classList.add("hidden");
+        navLinks.classList.remove("flex");
+      });
+    });
+  </script>
+</body>
+</html>
