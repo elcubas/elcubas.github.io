@@ -1,0 +1,24 @@
+{
+  "calendario_publicitario_mexico": {
+    "temporada_verano": {
+      "fecha_inicio": "2026-06-21",
+      "fecha_fin": "2026-09-22",
+      "descripcion": "Campaña de verano."
+    },
+    "mes_patrio_independencia": {
+      "fecha_inicio": "2026-09-01",
+      "fecha_fin": "2026-09-30",
+      "descripcion": "Mes patrio."
+    },
+    "temporada_dia_de_muertos": {
+      "fecha_inicio": "2026-10-01",
+      "fecha_fin": "2026-11-02",
+      "descripcion": "Día de Muertos."
+    },
+    "navidad_y_reyes": {
+      "fecha_inicio": "2026-12-01",
+      "fecha_fin": "2027-01-06",
+      "descripcion": "Navidad y Día de Reyes."
+    }
+  }
+}
